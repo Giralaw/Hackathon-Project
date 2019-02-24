@@ -77,7 +77,8 @@ letterList = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q
 "v","w","x","y","z","A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
 wordList = ["bird","plane","house","lawyer", "head","blue","red","purple","yellow","tomato,","potato","rabies","kidney","bacon","hippo",
 "the","that","in","can","tuna","fish","piano","viola","violin","cello","bass","oboe","vibes","pipe","run","fear","love","hate",
-"sand","human","why","what","who","when","where","how","cat","dog","fish","six","seven","single","alone","sad","deep","high","sky","words","plural","unique", "royal","loyal","king","queen","court","judge","jury","peer","pier","pear"]
+"sand","human","why","what","who","when","where","how","cat","dog","fish","six","seven","single","alone","sad","deep","high",
+"sky","words","plural","unique", "royal","loyal","king","queen","court","judge","jury","peer","pier","pear"]
 #
 #
 #
