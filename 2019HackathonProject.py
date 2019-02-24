@@ -8,3 +8,6 @@ def function1():
     print (x + " Yes")
     
 function1()
+
+def function2():
+    5
