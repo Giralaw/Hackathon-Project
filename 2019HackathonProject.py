@@ -80,17 +80,20 @@ def clearConsole():
     print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
 
 def letterPractice():
-    print("Enter the morse code equivalent of these letters, exit to exit\n")
+    print("Enter the morse code equivalent of the letter, exit to exit\n\n\n\n")
     while 1==1:
         targetLetter = random.choice(letterList)
         targetMorse = codes[targetLetter]
-        inputLetter = input(targetLetter + "\n")
+        inputMorse = input("   " + targetLetter + "\n\n\n\n")
         if inputMorse == targetMorse:
-            print("Correct!\n")
+            clearConsole()
+            print("   Correct!\n\n\n\n")
+            print(targetMorse)
         elif inputMorse == "exit":
             break
         else:
-            print("Incorrect\n")
+            clearConsole()
+            print("Incorrect\n\n\n\n")
         #random letter generator
     #checks if user input is correct
 
@@ -104,6 +107,16 @@ def convertletter(let):
 #
 #
 
+print("\n\n\n                     WELCOME TO\n\n")
+print("  __  __    ____    _____     _____   ______     __    ___    __ ")
+print(" |  \/  |  / __ \  |  __ \   / ____| |  ____|   /_ |  / _ \  /_ |")
+print(" | \  / | | |  | | | |__) | | (___   | |__       | | | | | |  | |")
+print(" | |\/| | | |  | | |  _  /   \___ \  |  __|      | | | | | |  | |")
+print(" | |  | | | |__| | | | \ \   ____) | | |____     | | | |_| |  | |")
+print(" |_|  |_|  \____/  |_|  \_\ |_____/  |______|    |_|  \___/   |_|\n\n")
+print("A Cole Parks Creation (featuring contributions from Alex Skeldon)\n\n\n\n\n\n\n\n\n\n\n")
+time.sleep(1)
+print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nwhat would you like to do today?\n\n\n")
 whichProgram = input("Enter 1 for continuous letter practice\nEnter 2 for word practice\n")
 clearConsole()
 
