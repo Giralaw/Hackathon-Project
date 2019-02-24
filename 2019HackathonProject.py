@@ -101,32 +101,54 @@ def letterPractice():
         else:
             clearConsole()
             print("Incorrect\n\n\n\n")
+            print("Answer: " + targetMorse + "\n\n\n\n")
         #random letter generator
     #checks if user input is correct
 
 def wordPractice():
-    print("Enter the morse code equivalent of the word, type exit to exit.\n\n\n\n")
+    print("Enter the morse code equivalent of the word, add a space between morse letters, type exit to exit.\n\n\n\n")
     while 1==1:
-        targetWord = random.choice(wordList)
-        targetMorse = codes[targetWord]
+ #       targetWord = random.choice(wordList)
+        print(random.choice(wordList))
+        targetMorse = createTargetMorse(random.choice(wordList))
         inputMorse = input("   " + targetWord + "\n\n\n\n")
         if inputMorse == targetMorse:
             clearConsole()
             print("   Correct!\n\n\n\n")
-            print(targetMorse)
         elif inputMorse == "exit":
             break
         else:
             clearConsole()
             print("Incorrect\n\n\n\n")
+            print("Answer: " + targetMorse + "\n\n\n\n")
         #random word generator
     #checks if user input is correct
-  
+
+def createTargetMorse(word):
+    targetMorse = ""
+    for letter in word:
+        targetMorse += convertletter(letter)
+        targetMorse += " "
+    targetMorse = targetMorse[:-1]
+    return targetMorse
+        
+
 def convertletter(let):
+    targetLetter = ""
     if len(let)>1:
         print("Please give a single letter")
     else:
         targetLetter = codes[let]
+    return targetLetter
+
+def dictionary():
+    print("\n\n\n                     Dictionary\n\n")
+    print("a .-         b -...      c -.-.      d -..       e .         f ..-.\n")
+    print("g --.        h ....      i ..        j .---      k -.-       l .-..\n")
+    print("m --         n -.        o ---       p .--.      q --.-      r .-.\n")
+    print("s ...        t -         u ..-       v ...-      w .--       x-..-\n")
+    print("y -.--       z --..\n")
+    
 
 #
 #
@@ -142,7 +164,7 @@ print(" |_|  |_|  \____/  |_|  \_\ |_____/  |______|    |_|  \___/   |_|\n\n")
 print("A Cole Parks Creation (featuring contributions from Alex Skeldon)\n\n\n\n\n\n\n\n\n\n\n")
 time.sleep(1)
 print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nwhat would you like to do today?\n\n\n")
-whichProgram = input("Enter 1 for letter practice\nEnter 2 for word practice\n")
+whichProgram = input("Enter 1 for letter practice\nEnter 2 for word practice\nEnter 3 for the morse dictionary\n")
 clearConsole()
 if whichProgram == "1":
     letterPractice()
@@ -156,4 +178,6 @@ else:
         elif whichProgram == "2":
             wordPractice()
             break
-        whichProgram = input("Please enter 1 or 2.\n")
+        elif whichProgram == "3":
+            dictionary()
+        whichProgram = input("Enter 1 for letter practice\nEnter 2 for word practice\n")
