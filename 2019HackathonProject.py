@@ -1,13 +1,30 @@
 #klnjyuihvgbyas
-import time
 
+a = ".-"
+b = "-..."
+c = "-.-."
+d = "-.."
+e = "."
+f = "..-."
+g = "--."
+h = "...."
+i = ".."
+j = ".---"
+k = "-.-"
+l = ".-.."
+m = "--"
+n = "-."
+o = "---"
+p = ".--."
+q = "--.-"
+r = ".-."
+s = "..."
+t = "-"
+u = "..-"
+v = "...-"
+w = ".--"
+x = "-..-"
+y = "-.--"
+z = "--.."
 
-def function1():
-    x = input("Get in\n")
-    time.sleep(2)
-    print (x + " Yes")
-    
-function1()
-
-def function2():
-    5
+print(c+o+l+e)
