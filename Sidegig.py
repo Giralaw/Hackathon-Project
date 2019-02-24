@@ -1,0 +1,11 @@
+import time
+print("\n\n\n                     WELCOME TO\n\n")
+print("  __  __    ____    _____     _____   ______     __    ___    __ ")
+print(" |  \/  |  / __ \  |  __ \   / ____| |  ____|   /_ |  / _ \  /_ |")
+print(" | \  / | | |  | | | |__) | | (___   | |__       | | | | | |  | |")
+print(" | |\/| | | |  | | |  _  /   \___ \  |  __|      | | | | | |  | |")
+print(" | |  | | | |__| | | | \ \   ____) | | |____     | | | |_| |  | |")
+print(" |_|  |_|  \____/  |_|  \_\ |_____/  |______|    |_|  \___/   |_|\n\n")
+print("A Cole Parks Creation (featuring contributions from Alex Skeldon)\n\n\n\n\n\n\n\n\n\n\n")
+time.sleep(5)
+print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nwhat would you like to do today?\n\n\n")
