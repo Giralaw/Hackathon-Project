@@ -95,7 +95,7 @@ def letterPractice():
         if inputMorse == targetMorse:
             clearConsole()
             print("   Correct!\n\n\n\n")
-            print(targetMorse)
+            print(targetMorse + "\n\n\n\n")
         elif inputMorse == "exit":
             break
         else:
