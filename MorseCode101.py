@@ -109,8 +109,8 @@ def wordPractice():
     print("Enter the morse code equivalent of the word, add a space between morse letters, type exit to exit.\n\n\n\n")
     while 1==1:
  #       targetWord = random.choice(wordList)
-        print(random.choice(wordList))
-        targetMorse = createTargetMorse(random.choice(wordList))
+        targetWord = random.choice(wordList)
+        targetMorse = createTargetMorse(targetWord)
         inputMorse = input("   " + targetWord + "\n\n\n\n")
         if inputMorse == targetMorse:
             clearConsole()
